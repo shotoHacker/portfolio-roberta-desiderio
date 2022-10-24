@@ -23,13 +23,14 @@
 
 <body style="font-family: 'Montserrat', sans-serif;">
 
-<!-- go back to top -->
-  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="z-50 inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-blue-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 " id="btn-back-to-top">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
- </button>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v15.0" nonce="VfoBpD9u"></script>
 
+<button style="position: fixed; display: none;" type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-[#D9C8BF] z-50 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+</button>
     
-<nav class="px-2 sm:px-4 py-2.5 mb-6 fixed w-full z-20 top-0 left-0 border-b border-gray-200 bg-[#D9C8BF]">
+<nav class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200 bg-[#D9C8BF]">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
     <a href="index.html" class="flex items-center">
         <img src="../assets/logo/Tondo oro nero trasp.png" class=" h-6 sm:h-9 mr-6 rounded-full scale-[2]" alt="Roberta Desiderio Logo">
@@ -39,7 +40,7 @@
         <button type="button" class="hidden md:block text-[#5C5C5C] bg-white hover:bg-[#F2E3D5]  transition-colors focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 ">Get started</button>
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          <svg class="w-6 h-6" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
     </div>
     <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1 sticky " id="navbar-sticky">
@@ -48,28 +49,101 @@
           <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:text-white font-semibold md:p-0" aria-current="page">Home</a>
         </li>
         <li>
+          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:hover:text-white md:p-0 ">Galleria</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:hover:text-white md:p-0 ">Servizi</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:hover:text-white md:p-0 ">Contattami</a>
+        </li>
+        <li>
           <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:hover:text-white md:p-0 ">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:hover:text-white md:p-0 ">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 md:hover:text-white md:p-0 ">Contact</a>
         </li>
       </ul>
     </div>
     </div>
   </nav>
 
-  <div class="grid grid-cols-2 grid-rows-2 gap-4 h-screen m-16">
-    <div>
-<h1> dssd</h1>
+  <div class="grid grid-cols-1 grid-rows-3 gap-3 gap-y-5 h-fit m-10">
+    <div class="gap-y-0 mt-10">
+      <img src="../assets/roberta/DSC06416.webp" >
+    </div >
+    <div class="bg-[#D9C8BF] text-center table-cell align-middle">
+      <h1 style="font-family: breathing" class="text-white p-6 text-2xl">About Me</h1>
+      <p class="text-white text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem et consectetur atque</p>
+      <div class="p-6">
+        <a class=" text-[#5C5C5C] bg-white hover:bg-[#F2E3D5]  transition-colors focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 ">Scopri di più</a>
+      </div>
     </div>
-    <div>
-<h1>kmcksm</h1>
+    <div class="text-center table-cell align-middle">
+      <h1 class="font-semibold">Noi creiamo</h1><br>
+      <h1 style="font-family: breathing;" class= "text-decoration: underline text-[#D9C8BF] text-3xl">Arte</h1>
+      <div class="p-6">
+       <p class="text-[#5C5C5C] text-md table-cell align-middle ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem et consectetur error, odit, atque <br> non quaerat maxime fugiat vitae ipsa tempore.</p>
+      </div>
     </div>
   </div>
-  
+
+  <div class="grid grid-cols-1 grid-rows-1 h-fit m-10 " style="background: url(../assets/backgrounds/background_servizi.png)" >
+    <div class="text-center table-cell align-middle h-fit max-h-fit">
+      <h1 style="font-family: breathing" class="text-white p-6 text-3xl underline">Servizi</h1>
+      <p class="text-[#5C5C5C] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem et consectetur error</p>
+      <div class="p-6">
+        <a class=" text-[#5C5C5C] bg-white hover:bg-[#F2E3D5]  transition-colors focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 ">Scopri di più</a>
+        <img class="mt-6" src="../assets/backgrounds/bg_roberta_servizi.webp" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center table-cell align-middle">
+    <h1 class="font-semibold">Fidelizzazione</h1><br>
+    <h1 style="font-family: breathing;" class= "text-decoration: underline text-[#D9C8BF] text-3xl">Feedbacks</h1>
+    <div class="p-6">
+     <p class="text-[#5C5C5C] text-md table-cell align-middle ">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Fuga quidem et consectetur error</p>
+    </div>
+  </div>
+
+
+  <div class="grid mb-8 rounded-lg border border-gray-200 shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
+   <div class="flex flex-col justify-center items-center m-10 text-center bg-white rounded-t-lg border-b border-gray-200 md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+    <div class="fb-post max-w-fit" data-href="https://www.facebook.com/giorgia.mincarelli/posts/pfbid0yU92Tz8bFHkoWa7KHM76VGqdxnvQtCJ9gSyHLShmbEFx64QVdSo3n3WUxVBfHYmLl" data-show-text="true"><blockquote cite="https://www.facebook.com/giorgia.mincarelli/posts/10224713433096054" class="fb-xfbml-parse-ignore"><p>Una bellissima scoperta, Roby semplicemente fantastica i miei bimbi si sono subito sentiti a loro agio straconsigliata</p>Pubblicato da <a href="#" role="button">Giorgia Mincarelli</a> su&nbsp;<a href="https://www.facebook.com/giorgia.mincarelli/posts/10224713433096054">Sabato 25 dicembre 2021</a></blockquote></div>   </div>
+   <div class="flex flex-col justify-center items-center m-10 mt-0 text-center bg-white rounded-t-lg border-b border-gray-200 md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+      <div class="fb-post max-w-fit" data-href="https://www.facebook.com/ruta.Stm/posts/pfbid02fEDhmX7chbhhxzB6KrYKijxUCbo8nrwrEubJuTrHBoat9odN8kFfxRarBMZHcXu3l"  data-show-text="true"><blockquote cite="https://www.facebook.com/ruta.Stm/posts/10227431386239993" class="fb-xfbml-parse-ignore"><p>Cortesia, disponibilità e attenzione al cliente : richiesta di un servizio ottenuto in tempi rapidi e con piena soddisfazione.❤️🧸</p>Pubblicato da <a href="https://www.facebook.com/ruta.Stm">Ruta Stimburyte</a> su&nbsp;<a href="https://www.facebook.com/ruta.Stm/posts/10227431386239993">Venerdì 8 luglio 2022</a></blockquote></div>
+   </div>
+  </div>
+
+<div class="text-center m-10">
+  <p class=" text-[#5C5C5C] text-md mb-6">Questo per me significa soddisfare le vostre </p>
+  <h1 style="font-family: breathing;" class= "text-decoration: underline text-[#D9C8BF] text-3xl mb-6">Richieste</h1>
+  <p class=" text-[#5C5C5C] text-md mb-6">Dai un'occhiata alle altre recensioni dei miei clienti: </p>
+  <div class="p-6">
+    <a href="https://www.facebook.com/laragazzadellefoto/reviews" class=" text-white bg-[#D9C8BF] hover:bg-[#F2E3D5]  transition-colors focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center md:mr-0 ">Recensioni</a>
+  </div>
+</div>
+
+
+
+<footer class="p-4 text-center bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+  <span class="text-sm text-[#5C5C5C] sm:text-center dark:text-gray-400">© 2022 <a href="index.html" class="hover:underline">Roberta Desiderio Photography™</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap text-center justify-center items-center mt-3 text-sm text-[#5C5C5C]sm:mt-0">
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline">Contact</a>
+      </li>
+  </ul>
+</footer>
+
+
 <script src="../javascript/general.js"></script>
 <script src="../node_modules/flowbite/dist/flowbite.js"></script>
 

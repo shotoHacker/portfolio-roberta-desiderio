@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'breathing'; /*a name to be used later*/
+    src: url('../font/Breathing.ttf'); /*URL to font*/
+}

@@ -26,6 +26,3 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-$("#navbar_button" ).on( "click", function() {
-  $("#navbar-default").toggleClass("hidden");
-});
